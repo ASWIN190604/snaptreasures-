@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #F20D65;
+  --color-brand-pink-hover: #DB0959;
+  --color-brand-raspberry: #C90A50;
+  --color-brand-blush: #FCE5EC;
+  --color-brand-pale-pink: #FFF1F4;
+  --color-brand-cream: #FFF9F4;
+  --color-brand-coral: #FF8A91;
+  --color-brand-plum: #6D2354;
+  --color-brand-text: #29212A;
+  --color-brand-muted: #786D73;
+  --color-brand-border: #F0DDE2;
+  --color-brand-whatsapp: #25D366;
+  --color-brand-whatsapp-dark: #1EBE5D;
+
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-script: 'Caveat', 'Dancing Script', cursive;
+
+  --shadow-soft: 0 8px 30px rgba(242, 13, 101, 0.08);
+  --shadow-soft-lg: 0 14px 40px rgba(242, 13, 101, 0.14);
+  --shadow-polaroid: 0 10px 25px -5px rgba(41, 33, 42, 0.14), 0 8px 10px -6px rgba(41, 33, 42, 0.08);
+}
+
+@layer base {
+  * {
+    border-color: #F0DDE2;
+  }
+  
+  body {
+    background-color: #FFF9F4;
+    color: #29212A;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Gifting Aesthetic Utilities */
+.polaroid-card {
+  background: #ffffff;
+  padding: 12px 12px 28px 12px;
+  box-shadow: 0 10px 25px -5px rgba(41, 33, 42, 0.12), 0 8px 10px -6px rgba(41, 33, 42, 0.08);
+  border: 1px solid rgba(240, 221, 226, 0.7);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.polaroid-card:hover {
+  transform: translateY(-4px) rotate(-1deg);
+  box-shadow: 0 20px 35px -5px rgba(242, 13, 101, 0.15), 0 10px 15px -5px rgba(41, 33, 42, 0.1);
+}
+
+.acrylic-badge {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 15px rgba(242, 13, 101, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF1F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF8A91;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F20D65;
+}
